@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('Build Node App Docker Image'){
             steps{
-                sh "docker build . -t lagumen/node-web-app"
+                sh "sudo docker build . -t lagumen/node-web-app"
                 }
          }
      }
