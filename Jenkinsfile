@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment{
         DOCKER_TAG = getDockerTag()
+    }
     stages{
         stage('Build Node App Docker Image'){
             steps{
